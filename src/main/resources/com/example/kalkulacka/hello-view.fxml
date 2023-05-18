@@ -1,16 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.kalkulacka.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<VBox alignment="CENTER" cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="260.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kalkulacka.HelloController">
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="Label1" alignment="CENTER_RIGHT" contentDisplay="CENTER" opacity="0.5" prefHeight="45.0" prefWidth="227.0" text="0" textAlignment="RIGHT" textFill="#15b525" textOverrun="LEADING_WORD_ELLIPSIS" translateX="-3.0" translateY="192.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <font>
+         <Font name="System Bold" size="35.0" />
+      </font></Label>
+   <Label fx:id="Label2" alignment="CENTER_RIGHT" contentDisplay="CENTER" opacity="0.5" prefHeight="16.0" prefWidth="225.0" textAlignment="RIGHT" textFill="#e40c0c" textOverrun="LEADING_WORD_ELLIPSIS" translateX="-2.0" translateY="120.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="Label3" alignment="TOP_LEFT" contentDisplay="CENTER" opacity="0.5" prefHeight="16.0" prefWidth="225.0" textAlignment="RIGHT" textFill="#1346d0" textOverrun="LEADING_WORD_ELLIPSIS" translateX="2.0" translateY="99.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Label>
+   <Button fx:id="Button3" onAction="#onHelloButtonClick3" prefHeight="20.0" prefWidth="50.0" text="3" translateX="29.0" translateY="251.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+    <Button fx:id="Button1" onAction="#onHelloButtonClick1" prefHeight="20.0" prefWidth="50.0" text="1" translateX="-87.0" translateY="226.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Button>
+   <Button fx:id="Button2" onAction="#onHelloButtonClick2" prefHeight="20.0" prefWidth="50.0" text="2" translateX="-29.0" translateY="201.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button4" onAction="#onHelloButtonClick4" prefHeight="20.0" prefWidth="50.0" text="4" translateX="-87.0" translateY="144.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button5" onAction="#onHelloButtonClick5" prefHeight="20.0" prefWidth="50.0" text="5" translateX="-29.0" translateY="119.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button6" onAction="#onHelloButtonClick6" prefHeight="20.0" prefWidth="50.0" text="6" translateX="29.0" translateY="94.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button7" onAction="#onHelloButtonClick7" prefHeight="20.0" prefWidth="50.0" text="7" translateX="-87.0" translateY="37.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button8" onAction="#onHelloButtonClick8" prefHeight="20.0" prefWidth="50.0" text="8" translateX="-29.0" translateY="12.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button9" onAction="#onHelloButtonClick9" prefHeight="20.0" prefWidth="50.0" text="9" translateX="29.0" translateY="-13.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="Button0" onAction="#onHelloButtonClick0" prefHeight="20.0" prefWidth="50.0" text="0" translateX="-29.0" translateY="59.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonCarka" onAction="#onHelloButtonClickCARKA" prefHeight="20.0" prefWidth="50.0" text="," translateX="29.0" translateY="34.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonC" onAction="#onHelloButtonClickC" prefHeight="20.0" prefWidth="50.0" text="C" textFill="#e513f0" translateX="-87.0" translateY="-123.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonDeleno" onAction="#onHelloButtonClickDELENO" prefHeight="20.0" prefWidth="50.0" text="÷" textFill="#e40c0c" translateX="87.0" translateY="-113.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonKrat" onAction="#onHelloButtonClickKRAT" prefHeight="20.0" prefWidth="50.0" text="x" textFill="#e30e0e" translateX="87.0" translateY="-106.0" />
+   <Button fx:id="ButtonMinus" onAction="#onHelloButtonClickMIUNUS" prefHeight="20.0" prefWidth="50.0" text="-" textFill="#e40c0c" translateX="87.0" translateY="-99.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonPlus" onAction="#onHelloButtonClickPLUS" prefHeight="69.0" prefWidth="50.0" text="+" textFill="#e30e0e" translateX="87.0" translateY="-91.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonRovnaSe" onAction="#onHelloButtonClickROVNAse" prefHeight="20.0" prefWidth="225.0" text="=" translateY="-80.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonPlusMinus" onAction="#onHelloButtonClickPlusMinus" prefHeight="20.0" prefWidth="50.0" text="+/-" translateX="-87.0" translateY="-141.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonMRC" onAction="#onHelloButtonClickMRC" prefHeight="20.0" prefWidth="50.0" text="MRC" textFill="#1346d0" translateX="-29.0" translateY="-298.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonMMinus" onAction="#onHelloButtonClickMminus" prefHeight="20.0" prefWidth="50.0" text="M -" textFill="#1346d0" translateX="29.0" translateY="-323.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ButtonMPlus" onAction="#onHelloButtonClickMplus" prefHeight="20.0" prefWidth="50.0" text="M +" textFill="#1346d0" translateX="87.0" translateY="-348.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Line endX="100.0" startX="-120.0" translateY="-385.0" />
+   <Line endX="100.0" startX="-120.0" translateY="-426.0" />
 </VBox>
